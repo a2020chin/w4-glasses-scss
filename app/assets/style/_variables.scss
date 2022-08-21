@@ -1,0 +1,40 @@
+$font-primary: "Noto Sans TC";
+$font-secondary: "Roboto";
+$font-third: "Wendy One";
+$container: 1296px;
+$section-margin: 80px;
+
+
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
+
+
+$columns:   12;
+$grid-gutter-width: 1.5rem ;
+
+
+$color: (
+  "primary":    #650300,
+  "secondary":  #AA0601,
+  "contextbg":  #FBF2F2,
+  "dove":       #707070,
+  "white":      #fff,
+  "black":      #000,
+);
+
+$breakpoint: (
+  "lg": $container + 32px,
+  "md": 769px,
+  "sm": 376px,
+);
+$lineheight: (
+  "text": 30px,
+  "ft-nav": 21px
+);
+
+$direction: (
+  "t": top,
+  "r": right,
+  "b": bottom,
+  "l": left
+);

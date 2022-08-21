@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="bg-secondary">
+    <div class="container d-flex justify-content-space-between align-items-center py-sm-2">
+      <div class="logo"><a href="#">看得清，才能看得遠</a></div>
+      <ul class="nav">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點 </a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+      <span class="material-symbols-outlined sm-menu">
+        menu
+      </span>
+    </div>
+    <ul class="d-flex flex-wrap text-center sm-nav">
+      <li class="w-100 d-flex">
+        <a href="#" class="d-block color-white py-px-12 w-50">系列鏡框</a>
+        <a href="#" class="d-block color-white py-px-12 w-50">門市據點 </a>
+      </li>
+      <li class="w-100 d-flex">
+        <a href="#" class="d-block color-white py-px-12 w-50">部落格</a>
+        <a href="#" class="d-block color-white py-px-12 w-50">常見問題</a>
+      </li>
+    </ul>
+  </header>
+
+  <%- contents %>
+
+  <footer class="bg-secondary">
+    <div class="container">
+      <div class="d-flex justify-content-space-between pt-6 pb-3 ft-sm-border">
+        <ul class="nav">
+          <li><a href="#" class="fz-2">首頁</a></li>
+          <li><a href="#" class="fz-2">系列鏡框</a></li>
+          <li><a href="#" class="fz-2">門市據點</a></li>
+          <li><a href="#" class="fz-2">部落格</a></li>
+          <li><a href="#" class="fz-2">常見問題</a></li>
+        </ul>
+        <ul class="d-none d-sm-block">
+          <li class="mb-1">
+            <a href="#" class="fz-4 color-white fz-sm-2">
+              <span class="vertical-middle ft-contact material-symbols-outlined">
+                call
+              </span>
+              0800-000-000
+            </a>
+          </li>
+          <li>
+            <a href="#" class="fz-4 color-white fz-sm-2">
+              <span class="vertical-middle ft-contact material-symbols-outlined">
+                mail
+              </span>
+              glasses@business.com
+            </a>
+          </li>
+        </ul>
+        <ul class="d-flex gap-4 align-items-center gap-md-2 gap-sm-1 align-items-sm-start">
+          <li><a href="#" class="d-block ft-icon"><img src="./assets/images/ic-social-fb.png" alt=""></a></li>
+          <li><a href="#" class="d-block ft-icon"><img src="/assets/images/ic_social_ig.png" alt=""></a></li>
+          <li><a href="#" class="d-block ft-icon"><img src="/assets/images/ic_social_line.png" alt=""></a></li>
+        </ul>
+      </div>
+      <ul class="d-sm-none">
+        <li class="mb-1">
+          <a href="#" class="fz-4 color-white fz-sm-2">
+            <span class="vertical-middle ft-contact material-symbols-outlined">
+              call
+            </span>
+            0800-000-000
+          </a>
+        </li>
+        <li class="pb-4 ft-border">
+          <a href="#" class="fz-4 color-white fz-sm-2">
+            <span class="vertical-middle ft-contact material-symbols-outlined">
+              mail
+            </span>
+            glasses@business.com
+          </a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-space-between py-4 flex-sm-column py-sm-2">
+        <p class="color-white mb-sm-1">Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="d-flex flex-sm-column">
+          <li>
+            <a href="#" class="fz-px-14 lh-ft-nav mr-6 color-white mb-sm-1 fz-sm-2">隱私權政策</a>
+          </li>
+          <li>
+            <a href="#" class="fz-px-14 lh-ft-nav color-white fz-sm-2">服務條款</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
