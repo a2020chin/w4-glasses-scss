@@ -197,6 +197,12 @@
         font-size: 1rem;
     }
 }
+.font-primary{
+    font-family: $font-primary;
+}
+.font-secondary{
+    font-family: $font-secondary;
+}
 .py-px-12{
     padding-top: 12px;
     padding-bottom: 12px;
@@ -254,6 +260,11 @@
 }
 .d-none{
     display: none;
+}
+.d-md-none{
+    @include pad{
+        display: none;
+    }
 }
 .d-sm-none{
     @include phone{

@@ -1,0 +1,50 @@
+.series-nav{
+    li{
+        width: 33.333%;
+        border-left:1px solid #DCDCDC;
+        &:last-child{
+            border-right:1px solid #DCDCDC;
+        }
+        a{
+        position: relative;
+        overflow: hidden;
+        &:after{
+            content: "";
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 0%;
+                border-bottom: 8px solid transparent;
+                transition: 0.5s;
+            }
+        &:hover:after{
+                width: 100%;
+                border-bottom: 8px solid #AA0601;
+            }
+        }
+    }
+    @include pad{
+        display: none;
+    }
+}
+.series-md-nav{
+    display: none;
+    li{
+        width: 33.333%;
+        border-left:1px solid #DCDCDC;
+        &:last-child{
+            border-right:1px solid #DCDCDC;
+        }
+        a{
+            @include pad{
+                font-size: 24px;
+            }
+            @include phone{
+                font-size: 16px;
+            }
+        }
+    } 
+    @include pad{
+        display: flex;
+    }
+}
