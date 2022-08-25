@@ -2479,12 +2479,14 @@ body {
 .from-input {
   padding: 6px 0 6px 12px;
   font-size: 16px;
-  border: 1px solid #000000; }
+  border: 1px solid #000000;
+  background: transparent; }
 
 .from-opinion {
   padding: 6px 0 106px 12px;
   font-size: 16px;
-  border: 1px solid #000000; }
+  border: 1px solid #000000;
+  background: transparent; }
 
 .ft-border {
   border-bottom: 1px solid white; }
