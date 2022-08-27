@@ -2120,7 +2120,7 @@ a {
 
 @media screen and (max-width: 576px) {
   .fz-sm-6 {
-    font-size: 3rem; } }
+    font-size: 2rem; } }
 
 @media screen and (max-width: 576px) {
   .fz-sm-2 {
@@ -2445,13 +2445,13 @@ body {
     color: #fff; }
     .nav a:hover {
       background: #650300; }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 767px) {
     .nav {
       display: none; } }
 
 .sm-menu {
   display: none; }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 767px) {
     .sm-menu {
       display: block;
       position: relative;
