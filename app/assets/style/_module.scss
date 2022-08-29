@@ -24,15 +24,12 @@
     text-align: center;
 }
 .ft-icon{
-    width: 48px;
-    height: 48px;
+    font-size: 48px;
     @include pad{
-        width: 40px;
-        height: 40px;
+        font-size: 40px;
     }
     @include phone{
-        width: 24px;
-        height: 24px;
+        font-size: 24px;
     }
 }
 .ft-contact{
@@ -41,15 +38,24 @@
         font-size: 18px;
     }
 }
-
+.hover{
+    &:hover{
+        color: bisque;
+    }
+}
 .card{
     border-radius: 4px;
     box-shadow: 0px 2px 6px #00000029;
     height: 100%;
     background: #fff;
+    display: flex;
+    flex-direction:column;
     &-img{
         width: 100%;
         border-radius: 12px 12px 0 0;
+    }
+    p{
+        flex-grow:1;
     }
 }
 
@@ -63,9 +69,6 @@
 }
 
 .item{
-    img{
-        height: 168px;
-    }
     &-color-1{
         width: 24px;
         height: 24px;

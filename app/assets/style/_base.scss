@@ -6,22 +6,33 @@ body {
   color: map-get($color , "primary");
   line-height: 1.5;
 }
+@mixin pc{
+  @media screen and (max-width: map-get($breakpoint, "lg")) {
+      @content;
+  }
+}
+
+@mixin pad{
+  @media screen and (max-width: map-get($breakpoint, "md")) {
+      @content;
+  }
+}
+
+@mixin phone{
+  @media screen and (max-width: map-get($breakpoint, "sm")) {
+      @content;
+  }
+}
 h1{
   font-size: 4rem;
   font-weight: bold;
-  @include pad{
-    font-size: 4rem;
-  }
-  @include phone{
+  @media screen and (max-width: 620px){
     font-size: 1.5rem;
   }
 }
 h2{
   font-size: 3rem;
   font-weight: bold;
-  @include pad{
-    font-size: 3rem;
-  }
   @include phone{
     font-size: 1.5rem;
   }
@@ -43,16 +54,14 @@ a {
   transition: 0.3s;
 }
 .container{
-  max-width: map-get($breakpoint , 'lg' );
+  max-width: 1320px;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 12px;
+  padding-right: 12px;
   @include pad{
-      max-width: map-get($breakpoint , 'md' );
-      padding: 0 36px;
+      max-width: 720px;
   }
   @include phone{
-      max-width: map-get($breakpoint , 'sm' );
-      padding: 0 14px 0 13px;
+      max-width: 100%;
   }
 }

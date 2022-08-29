@@ -1,7 +1,7 @@
 $font-primary: "Noto Sans TC";
 $font-secondary: "Roboto";
 $font-third: "Wendy One";
-$container: 1296px;
+$container: 1320px;
 $section-margin: 80px;
 
 
@@ -24,8 +24,8 @@ $color: (
 
 $breakpoint: (
   "lg": $container + 32px,
-  "md": 769px,
-  "sm": 376px,
+  "md": 992px,
+  "sm": 576px,
 );
 $lineheight: (
   "text": 30px,
